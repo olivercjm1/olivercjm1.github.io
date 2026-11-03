@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Tutorial 19</title>
+        <meta name="viewport content=width=device-width", initial-scale=1.0>
+        <script>
+            function checkc()
+            {
+                var getname = document.getElementById("insertc").value;
+                var letters = /^[A-Za-z]+$/;
+                switch(true)
+                {
+                    case getname == "Oliver":
+                        case getname == "oliver":
+                            case getname == "JIEN MENG":
+                                case getname == "Oliver Chan":
+                                    case getname == "OLIVER CHAN":
+                                        case getname == "JIEN MENG":
+                                            case getname == "CHAN JIEN MENG":
+                                                case getname == "Chan Jien Meng":
+                                                    case getname == "Jien Meng":
+                                                        alert("You're Right, My name is " + getname);
+                                                        break;
+                    case getname.trim() === "":
+                        alert("Please Enter Name");
+                        break;
+
+                    case !letters.test(getname):
+                        alert("Only alphabets are allowed in the input");
+                        break;
+
+                    default:
+                        alert("Wrong, my name is not " + getname + " try again.");
+                        break;
+                }
+            }
+        </script>
+    </head>
+    <body bgcolor="black" text="white">
+        <center><form>
+            <h2>Say my Name &nbsp;:&nbsp;&nbsp;</h2>
+            <textarea rows="10" cols="50" name=insertc id="insertc" onblur="checkc()"></textarea>
+        </form></center>
+    </body>
+</html>
