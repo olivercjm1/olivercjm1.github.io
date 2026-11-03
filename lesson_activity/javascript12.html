@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>JavaScript</title>
+        <meta name="viewport content=width=device-width", initial-scale=1.0>
+        <script>
+            function checknumber()
+            {
+                var minnumber = document.getElementById("minnumber").value;
+                var maxnumber = document.getElementById("maxnumber").value;
+
+                for(i=minnumber;i<=maxnumber;i++)
+                {
+                    document.write("Using i++ : ")
+                    document.write(i + "<br>")
+                }
+
+                document.write("<br><br>")
+
+                for(i=maxnumber;i>=minnumber;i--)
+                {
+                    document.write("Using i-- :")
+                    document.write(i + "<br>")
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1> JavaScript - Loops</h1>
+        <form name="myjava" onsubmit="checknumber()">
+            Insert a min number : 
+            <input type="number" name=minnumber id="minnumber">
+            <br><br>
+            Insert a max number :
+            <input type=number name=maxnumber id=maxnumber>
+            <br><br>
+            <input type=submit name=submit>
+
+        </form>
+    </body>
+</html>

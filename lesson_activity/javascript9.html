@@ -1,0 +1,41 @@
+<html><head><title>JavaScript</title>
+    <link rel=icon href=whisper.jpg type=image/jpg>
+    <meta name=viewport content=width=device-width, initial-scale=1.0>
+    </head>
+    <body>
+    <h1> This is an example of using JavaScript - Arrays in HTML. </h1>
+    <h3>Example 1: By array literal</h3>
+    <script>  
+    var subjecttaken=["DCS3003","DCS4003","DCS5003", "aha"];  
+    for (i=0;i<subjecttaken.length;i++){  
+    document.write(subjecttaken[i] + "<br/>");  
+    }  
+    </script>  
+    <hr>
+    
+    <h3>Example 2: By creating instance of Array directly (using new keyword)</h3>
+    
+    <script>  
+    var i;  
+    var subjecttaken = new Array();  
+    subjecttaken[0] = "DCS3003";  
+    subjecttaken[1] = "DCS4003";  
+    subjecttaken[2] = "DCS5003";  
+      
+    for (i=0;i<subjecttaken.length;i++){  
+    document.write(subjecttaken[i] + "<br>");  
+    }  
+    </script>    
+    <hr>
+    
+    <h3>Example 3: By using an Array constructor (using new keyword)</h3>
+    
+    <script>  
+    var subjecttaken=new Array("DCS3003","DCS4003","DCS5003","DCS12345");  
+    for (i=0;i<subjecttaken.length;i++){  
+    document.write(subjecttaken[i] + "<br>");  
+    }  
+    </script>  
+    <hr>
+    
+    </body></html>

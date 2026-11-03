@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title> Home </title>
+        <meta name="viewport" content="width"=device-width, initial-scale = 1.0>
+        <style>
+            body{
+                background-image: url(dragon.gif);
+                background-size:contain;
+            }
+            table{
+                border: double 3px;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                background-color: rgb(154, 244, 214);
+            }
+            img{
+                margin-left: 35%;
+                display: flex;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="like.png">
+        <table align="center">
+            <form>
+                <tr>
+                    <th colspan="4">Secret Survey</th> 
+                    </tr>
+                    <tr>
+                        <td>First Name:</td> <td ><input type="text" name="fname" maxlength="5"></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name:</td><td > <input type = text name = lname></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Date of Birth:</td>
+                        <td><input type="date" name="dob"></td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td><input type="radio" name="gender" value="Male">Male
+                        <input type="radio" name="gender" value="Female">Female</td>
+                    </tr>
+                    <tr>
+                        <td>What Shoe You Usually Use For? :</td>
+                        <td><input type="checkbox" >Basketball
+                        <input type="checkbox">Football
+                        <input type="checkbox">Running
+                        <input type="checkbox">Leisure</td></tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="button"value=Submit onmouseup="goback()"> <input type="reset" value="Reset"></td>
+                        </tr>
+            </form>
+        </table>
+
+        <script>
+            function goback()
+                {
+                    window.location.href = 'LIKE.html';
+                }
+        </script>
+    </body>
+</html>

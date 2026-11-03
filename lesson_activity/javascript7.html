@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta name="viewport content=width=device-width",initial-scale=1.0>
+    </head>
+    <body bgcolor="black" text="white">
+        <h1>
+            Event - Onblur and Onfocus
+        </h1>
+        <p style ="color: blue; font-size: 30;border-style: double; width: fit-content;">
+            Click the text field, a function was called to set the background color to blue.
+        </p>
+        <p style="color:yellow;font-size:30;border-style:ridge;width:fit-content;">
+            Click out of the text field, a function was called to set  the background color to yellow.
+            </p>
+            
+        Enter Your Name:
+        <textarea rows="30" cols="100" type="text" id="fname" onfocus="CallFocus()" onblur="CallBlur()"></textarea>
+
+        <script>
+            function CallFocus() {
+              document.getElementById("fname").style.background = "blue";
+            }
+            
+            function CallBlur() {
+              document.getElementById("fname").style.backgroundImage="url(whisper.jpg)";
+            }
+        </script>
+            
+
+    </body>
+</html>

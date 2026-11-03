@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta name="viewport content=width=device-width",initial-scale=1.0>
+    </head>
+    <body bgcolor="black" text="white">
+        <h1>
+            Event - Onchange
+        </h1>
+        <font size="5" color="red"><b>
+            (A Function is triggered ->
+            the input text will change to UPPER CASE when the input field changed)
+        </b></font><br><br>
+
+        <h2>Example 1: </h2>
+        Enter Your Name:
+        <input type="text" id="fname" onchange="CallFunction()">
+
+        <script>
+            function CallFunction() {
+                var getfname = document.getElementById("fname");
+                alert("The input text ***" + getfname.value + "*** will change to UPPER CASE");
+                getfname.value = getfname.value.toUpperCase();
+            }
+        </script>
+            
+
+    </body>
+</html>

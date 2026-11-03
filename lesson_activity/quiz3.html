@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Quiz 3</title>
+    </head>
+    <body>
+        <form>
+        <h1 align="center"><b>DCS2303 Website Design Course Survey</b></h1>
+        <table style="border: solid 3px; width: 100%;">
+            <tr>
+                <td><center><table style="border: solid 3px; width: 80%;">
+                    <tr><td colspan="5" style="text-align: left; color: blue;"><u>Personal Detail</u></td></tr>
+                        <tr>
+                            <td width="25%">Student ID : </td>
+                            <td width="25%"><input type="text" name="sid" width="100%"></td>
+                            <td width="25%">Student Name : </td>
+                            <td width="25%"><input type="text" name="sn"></td>
+                        </tr>
+                        <tr>
+                            <td width="25%">Email Address : </td>
+                            <td width="25%"><input type="text" name="email" width="100%"></td>
+                            <td width="25%">IC No : </td>
+                            <td width="25%"><input type="text" name="ic" width="100%"></td>
+                        </tr>
+                        <tr>
+                            <td width="25%">Course : </td>
+                            <td>
+                                <select name="Course">
+                                    <option value="0"disabled selected>choose</option>
+                                    <option value="DIB">Diploma In Bussiness</option>
+                                    <option value="DCS">Diplma In Computer Science</option>
+                                    <option value="DAS">Diploma In Airline Services</option>
+                                </select></td>
+                            <td width="25%">D.O.B : </td>
+                            <td width="25%"><input type="date" name="dob"></td>
+                        </tr>
+                </table></center></td>
+            </tr>
+            <tr>
+                <td>
+                    <center><br><br>
+                        <table style="border: solid 3px; width: 80%;">
+                            <tr><td colspan="5" style="text-align: left; color: blue;"><u>Questions</u></td></tr>
+                            <tr><td colspan="5" style="text-align: left; color: red;">Please answer all the questions.</td></tr>
+
+                            <tr>
+                                <td>1) Have you grasped the content of the Website design so far?</td>
+                                <td><input type="radio" name="select1" value="yes">YES<br><input type="radio" name="select1" value="no">NO</td>
+                            </tr>
+                            <tr>
+                                <td>2) Can you now create a simple but interative website?</td>
+                                <td><br><input type="radio" name="select2" value="yes">YES<br><input type="radio" name="select2" value="no">NO</td>
+                            </tr>
+                            <tr>
+                                <td><br>3)What Have you learn so far?</td>
+                                <td><br><input type="checkbox" name="checkbox1">KNOWLOEDGE</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="checkbox" name="checkbox1">PRACTICAL SKILLS</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="checkbox" name="checkbox1">PROBLEM SOLVING</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="checkbox" name="checkbox1">SELF-EXPLORATION SKILL</td>
+                            </tr>
+                            <tr>
+                                <td><br>4) Wish Items/ Suggestions*</td>
+                            </tr>
+                            <tr>
+                                <td colspan="40" wisth="100%"><textarea rows="5" cols="160"></textarea></td>
+                            </tr>
+                        </table>
+                    </center>
+                </td>
+            </tr>
+            <tr><td>
+                <table align="center" width="20%">
+                    <tr>
+                        <td><center><input type="button" name="reset" value="Reset"></center></td>
+                        <td><center><input type="button" name="submit" value="Submit"></center></td>
+                    </tr>
+                    </table>
+                    </td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>

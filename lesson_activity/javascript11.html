@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>JavaScript</title>
+        <meta name="viewport content=width=device-width", initial-scale=1.0>
+        <script>
+            function checknumber()
+            {
+                var getnumber = document.getElementById("insertnumber").value;
+                switch(true)
+                {
+                    case getnumber >= 90:
+                        alert("Score = " + getnumber + ",grade A");
+                        break;
+                    case getnumber >= 80:
+                        alert("Score = " + getnumber + ",grade B");
+                        break;
+                    case getnumber >= 70:
+                        alert("Score = " + getnumber + ",grade C");
+                        break;
+                    case getnumber >= 60:
+                        alert("Score = " + getnumber + ",grade D");
+                        break;
+                    default:
+                        alert("Score = " + getnumber + ",grade F");
+                        break;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1> JavaScript - Switch in HTML</h1>
+        <form>
+            Insert a number&nbsp;:&nbsp;&nbsp;
+            <input type="number" name=insertnumber id="insertnumber" onblur="checknumber()">
+        </form>
+    </body>
+</html>

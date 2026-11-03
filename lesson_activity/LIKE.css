@@ -1,0 +1,310 @@
+body{
+    background-color: white;
+}
+
+.container {
+    width: 100%;
+  }
+
+table{
+    width: 100%;
+}
+
+.fix{
+    position: absolute;
+    z-index: 1;
+}
+
+
+.head{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img.menu:hover{
+    content: url(menuw.png);
+    border-radius: 20%;
+}
+
+img.acc:hover{
+    content: url(accb.png);
+    border-radius: 20%;
+}
+
+h1.contact:hover{
+    background-color: black;
+    color: white;
+    border-radius: 20%;
+    height: max-content;
+    width: max-content;
+}
+
+.choose {
+    position: relative;
+    display: inline-block;
+}
+
+.choose:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transition: width 0.3s, left 0.3s;
+}
+
+.choose:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.choose1 {
+    position: relative;
+    display: inline-block;
+}
+
+.choose1:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: rgb(0, 21, 255);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transition: width 0.3s, left 0.3s;
+}
+
+.choose1:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.choose2 {
+    position: relative;
+    display: inline-block;
+}
+
+.choose2:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: rgb(187, 0, 255);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transition: width 0.3s, left 0.3s;
+}
+
+.choose2:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.choose3 {
+    position: relative;
+    display: inline-block;
+}
+
+.choose3:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: rgb(93, 0, 255);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transition: width 0.3s, left 0.3s;
+}
+
+.choose3:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.choose4 {
+    position: relative;
+    display: inline-block;
+}
+
+.choose4:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: rgb(204, 0, 255);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transition: width 0.3s, left 0.3s;
+}
+
+.choose4:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+
+h1.men{
+    margin-top: 50;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 50px;
+    display: flex;
+    justify-content: left;
+}
+
+
+h1{
+    margin-left: 5%;
+    font-size: medium;
+    justify-content: center;
+    display: flex;
+}
+
+h1.hero{
+    font-size:50px;
+    font-weight: bolder;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: -10%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+table tr td img{
+    margin-left: 2%;
+    height: 30%;
+}
+table tr td img.hero{
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.c{
+    width: 100%;
+    text-align: left;
+    justify-content: left;
+}
+
+img.c:hover{
+    border: solid 3px black;
+    border-radius: 20%;
+}
+.c td{
+    width: 20%;
+}
+
+img.c{
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+}
+
+h1.c{
+    font-weight: bold;
+    justify-content: left;
+    font-size: 20px;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p.c{
+    justify-content: left;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 5%;
+}
+
+p.r{
+    font-weight: bold;
+    justify-content: left;
+    display: flex;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 5%;
+}
+
+p.b{
+    background-color: rgb(255, 255, 255);
+    top: 100%;
+    justify-content: right;
+    color: rgb(161, 163, 164);
+    height: 100%;
+    display: flex;
+}
+
+p.b:hover{
+    background-color: black;
+    border-radius: 20%;
+}
+
+table tr td img.logo{
+    margin-left: 25%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.container h1{
+    font-size: 60px;
+    font-weight: bolder;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+}
+
+button.btt{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+}
+
+h1.search{
+    margin-top: 0.5%;
+    margin-left: 15%;
+    font-size: medium;
+    display: flex;
+}
+
+h1.fav{
+    margin-top: 0.5%;
+    margin-left: 5%;
+    font-size: medium;
+    display: flex;
+}
+
+h1.men{
+    margin-top: 50;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 50px;
+    display: flex;
+    justify-content: left;
+}
+
+
+
+.n{
+    margin-top:10%;
+    margin-left: 32%;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    display: flex;
+}
+.category-row h1 {
+    margin-left: 3%;
+}

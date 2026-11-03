@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>JavaScript</title>
+        <meta name="viewport content=width=device-width", initial-scale=1.0>
+        <script>
+            function checknumber()
+            {
+                var anumber = document.getElementById("anumber").value;
+                var count = 0;
+                document.write("Starting Loop ");
+                while (count < anumber)
+                {
+                    document.write("Current Count : " + count + "<br/>");
+                    count ++;
+                }
+                document.write("Loop Stopped!")
+            }
+        </script>
+    </head>
+    <body>
+        <h1> This is an example os using JavaScript - Loops While in HTML.</h1>
+        <form name="myjava">
+            Insert a number : 
+            <input type="number" name=anumber id="anumber" onfocusout="checknumber()">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>JavaScript - Display text</title>
+        <link rel="icon" href="gjd.png" type="image/png">
+        <meta name="viewport content=width=device-width",initial-scale=1.0>
+    </head>
+    <body>
+        <script>
+            //defined d as today's date
+            let d = new Date();
+
+            //to ask this document to write out the words
+            document.write("\n<h1>Today's date is "+ d + "</h1>")
+
+            //popout box
+            window.alert("Today's date is \n"+ d + "");
+
+            //to write output in the browser console
+            console.log("今日は " + d);
+        </script>
+
+        <!--to print this page-->
+        <button onclick="window.print()">Print this page</button>
+    </body>
+</html>
