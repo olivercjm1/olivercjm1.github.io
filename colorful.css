@@ -1,0 +1,214 @@
+table {
+    margin: 0 auto;
+    width: 50%;
+    background: black;
+    border-collapse: separate;
+    border-spacing: 10px;
+    display: inline-table;
+}
+
+table td {
+    font-size: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+table tr {
+    background-color: linear-gradient(#0800ff, #ff0000, #000000);
+}
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:column;
+    overflow: auto;
+    background-color: black;
+}
+
+.outer-circle{
+    position: relative;
+    height: 800px;
+    width: 200px;
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    border-radius: 50%;
+    animation: rotate 1.5s linear infinite;
+}
+
+.outer-circle span {
+    position: absolute;
+    height: 800px;
+    width: 200px;
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    border-radius: 50%;
+}
+
+span:nth-child(1) {
+    filter: blur(5px)
+}
+
+span:nth-child(2) {
+    filter: blur(10px)
+}
+
+span:nth-child(3) {
+    filter: blur(25px)
+}
+
+span:nth-child(4) {
+    filter: blur(150px)
+}
+
+.inner-circle {
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    background: black;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    z-index: 9;
+}
+
+@keyframes rotate {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content vertically and horizontally */
+    overflow: auto; /* Enable scrolling */
+    background-color: black;
+    margin: 0; /* Remove default body margin */
+}
+
+.outer-circle1 {
+    position: relative;
+    height: 130vh; /* Adjusted height to fill the viewport */
+    width: 100vh; /* Fills the entire viewport width */
+    background: linear-gradient(#9d95f5, #8aeab2, #fdb5b5);
+    animation: rotate 1.5s linear infinite;
+    overflow: hidden; /* Hide overflow outside the viewport */
+    left: 30%;
+}
+
+.outer-circle1 span {
+    position: absolute;
+    height: 118vh;
+    width: 100vh;
+    background: linear-gradient(#9d95f5, #8aeab2, #fdb5b5);
+    border: 0;
+    top: 0;
+    left: 40%;
+}
+span:nth-child(1) {
+    filter: blur(5px)
+}
+
+span:nth-child(2) {
+    filter: blur(10px)
+}
+
+span:nth-child(3) {
+    filter: blur(25px)
+}
+
+span:nth-child(4) {
+    filter: blur(150px)
+}
+
+.inner-circle1 {
+    position: absolute;
+    height: 110vh;
+    width: 98vh;
+    background: black;
+    top: 2.5%; /* Vertically center it */
+    left: 50%; /* Horizontally center it */
+    transform: translate(-50%, -2%); /* Centering trick */
+    border: 50%;
+    z-index: 9;
+}
+
+@keyframes rotate {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:column;
+    overflow: auto;
+    background-color: black;
+}
+
+.outer-circle2{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(#e5f595, #e68db7, #fad790);
+    border-radius: 50%;
+    animation: rotate 1.5s linear infinite;
+}
+
+.outer-circle2 span {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(#e5f595, #e68db7, #fad790);
+    border-radius: 50%;
+}
+
+span:nth-child(1) {
+    filter: blur(5px)
+}
+
+span:nth-child(2) {
+    filter: blur(10px)
+}
+
+span:nth-child(3) {
+    filter: blur(25px)
+}
+
+span:nth-child(4) {
+    filter: blur(150px)
+}
+
+.inner-circle2 {
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    background: black;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    z-index: 9;
+}
+
+@keyframes rotate {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}

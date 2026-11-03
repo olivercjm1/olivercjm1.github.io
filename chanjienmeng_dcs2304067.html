@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>Person List</title>
+    <style>
+        th, td 
+        {
+            text-align: center;
+        }
+    </style>
+</head>
+<body bgcolor="black" text="white">
+    <h1 align="center">Person List</h1>
+    <table border="1" style="width: 50%;" align="center">
+        <tr>
+            <th width=10%>No.</th>
+            <th>Name</th>
+            <th width = 20%>Age</th>
+            <th>HP</th>
+        </tr>
+        <tbody id="personTable"></tbody>
+    </table>
+    <script>
+        fetch('chanjienmeng_dcs2304067.xml') 
+            .then(response => response.text())
+            .then(data => {
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(data, 'text/xml');
+                const persons = xmlDoc.getElementsByTagName('person');
+                const table = document.getElementById('personTable');
+                for (let i = 0; i < persons.length; i++) {
+                    const person = persons[i];
+                    const name = person.getElementsByTagName('name')[0].textContent;
+                    const age = person.getElementsByTagName('age')[0].textContent;
+                    const hp = person.getElementsByTagName('hp')[0].textContent;
+                    const row = table.insertRow(i);
+                    const numberCell = row.insertCell(0);
+                    const nameCell = row.insertCell(1);
+                    const ageCell = row.insertCell(2);
+                    const hpCell = row.insertCell(3);
+                    numberCell.innerHTML = i + 1;
+                    nameCell.innerHTML = name;
+                    ageCell.innerHTML = age;
+                    hpCell.innerHTML = hp;
+                }
+            })
+            .catch(error => console.error(error));
+    </script>
+</body>
+</html>

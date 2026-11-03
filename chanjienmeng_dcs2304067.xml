@@ -1,0 +1,52 @@
+<list>
+    <person>
+        <name>Anya Forger</name>
+        <age>10</age>
+        <hp> - </hp>
+    </person>
+    <person>
+        <name>Bill Gates</name>
+        <age>53</age>
+        <hp>(206) 709-3400</hp>
+    </person>
+    <person>
+        <name>Charles Benny</name>
+        <age>23</age>
+        <hp>4739-4588</hp>
+    </person>
+    <person>
+        <name>Danny Steven</name>
+        <age>19</age>
+        <hp>0129594588</hp>
+    </person>
+    <person>
+        <name>Freddy Fazbear</name>
+        <age>88</age>
+        <hp> - </hp>
+    </person>
+    <person>
+        <name>Kelvin Hert</name>
+        <age>45</age>
+        <hp>9-0359-4456</hp>
+    </person>
+    <person>
+        <name>Peter Parker</name>
+        <age>21</age>
+        <hp>05846-843</hp>
+    </person>
+    <person>
+        <name>Meows Morales</name>
+        <age>19</age>
+        <hp>14090771</hp>
+    </person>
+    <person>
+        <name>Jamie Ramsay</name>
+        <age>67</age>
+        <hp>33775556</hp>
+    </person>
+    <person>
+        <name>Yuji Idatori</name>
+        <age>25</age>
+        <hp>766853346</hp>
+    </person>
+</list>
