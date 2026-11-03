@@ -1,6 +1,27 @@
 let player;
 let terrain;
 let circle= [];
+let memeMode = false;
+let memeTime = 0;
+let jHeld = false;
+
+function keyPressed() {
+  if (key === 'j' || key === 'J') {
+    if (!jHeld) {
+      memeMode = !memeMode;
+      memeTime = 0;
+      jHeld = true;
+    }
+    return false;
+  }
+}
+
+function keyReleased() {
+  if (key === 'j' || key === 'J') jHeld = false;
+}
+
+// Release the key latch if the browser loses focus while J is held.
+window.addEventListener('blur', () => { jHeld = false; });
 
       function setup() {
         let canvas = createCanvas(1300, 700,WEBGL);
@@ -52,6 +73,9 @@ let circle= [];
         }
 
         update() {
+          if (memeMode) {
+            memeTime += Math.min(deltaTime, 50) / 1000;
+          }
           if (keyIsDown(LEFT_ARROW)) {
             this.angle -= this.speed;
           }
@@ -89,6 +113,15 @@ let circle= [];
           translate(this.pos.x, this.pos.y, this.pos.z);
           rotateY(this.angle);
           rotateX(this.angle2);
+          if (memeMode) {
+            // Two squishes and one full spin per second.
+            const squeeze = (1 - cos(memeTime * 720)) / 2;
+            rotateY(memeTime * 360);
+            // Anchor the squash at the feet so the character stays grounded.
+            translate(0, 80, 0);
+            scale(1 + squeeze * 0.55, 1 - squeeze * 0.60, 1 + squeeze * 0.35);
+            translate(0, -80, 0);
+          }
           kuru();
           pop();
         }
